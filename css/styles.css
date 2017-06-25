@@ -1,0 +1,79 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue;
+	font-size: 14px;
+	background-image: url("../images/background.jpg");
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.conversation {
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+    border-bottom-color: #DDDDDD;
+}
+
+.message {
+	display: inline-block;
+	min-width: 1px;
+	max-width: 800px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px #808080;
+}
+
+.message-from-me {
+	background-color: #DDF7C8;
+	margin-left: 100px;
+}
+
+.message-from-other {
+	background-color: #FFFFFF;
+}
+
+.timestamp {
+	background-color: #E0F1F9;
+	width: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.from-name-in-group {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#container {
+	display: flex;
+	overflow: hidden;
+	height: 92vh;
+	position: relative;
+	width: 100%;
+	backface-visibility: hidden;
+	will-change: overflow;
+}
+
+#conversations-list-pane,
+#conversation-detail-pane {
+	overflow: auto;
+	height: auto;
+	padding: .5rem;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+}
+
+#conversations-list-pane {
+	width: 15rem;
+}
+
+#conversation-detail-pane {
+	flex: 1;
+}
