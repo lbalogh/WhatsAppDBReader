@@ -18,6 +18,12 @@ a {
     border-bottom-color: #DDDDDD;
 }
 
+.last-message-date {
+	font-size: 12px;
+	color: #AAAAAA;
+	margin-top: 5px;
+}
+
 .message {
 	display: inline-block;
 	min-width: 1px;
