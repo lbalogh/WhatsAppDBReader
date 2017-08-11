@@ -4,9 +4,9 @@ Simple web page that can read and display a WhatsApp database (iOS version only)
 
 [![Capture d’écran 2017-06-25 à 14.53.52.png](https://s21.postimg.org/slr859j9j/Capture_d_e_cran_2017-06-25_a_14.53.52.png)](https://postimg.org/image/gjvub4a0z/)
 
-Still needs work. Works on Chrome and Firefox.
+(Outdated screenshot). Still needs work. Should work on Chrome, Firefox and Safari.
 
-## Steps to extract the ChatStorage.sqlite database
+## Steps to extract the ChatStorage.sqlite database from iPhone
 
 1. Do a backup of your phone with iTunes
 1. Download [IExplorer](https://macroplant.com/iexplorer) (the demo version works fine)
@@ -21,5 +21,3 @@ Still needs work. Works on Chrome and Firefox.
 1. Extract the ZIP
 1. In the extracted folder, double-click on "whatsapp.html"
 1. Click on the "Chose a file" button and select the "ChatStorage.sqlite" file extracted from your backup
-
-This *should* work on any recent browsers on macOS and Windows
