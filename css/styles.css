@@ -9,40 +9,75 @@ a {
   color: #000000;
 }
 
-#filter-container {
-  width: 95%;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #FFFFFF;
+#content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-template-rows: 50px 93vh;
 }
 
 #filter-field {
-  width: 100%;
+  width: 93%;
+  height: 25px
 }
 
-#chat-container {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 85vh;
+#top-left-pane {
+  background-color: #FBFBFB;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #E8E8E8;
+  padding-top: 9px;
+  padding-left: 10px;
 }
 
-#left-pane {
+#top-right-pane {
+  display:inline-block;
+  background-color: #EEEEEE;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #CFC9C4;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBDB;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
+#bottom-left-pane {
+  background-color: #FFFFFF;
+  padding-left: 10px;
   overflow: auto;
 }
 
-#right-pane {
+#bottom-right-pane {
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   overflow: auto;
 }
 
+#partner-name {
+  float: left;
+  font-size: 16px;
+}
+
+#file-selector {
+  float: right;
+}
+
 .conversation {
-  background-color: #FFFFFF;
   font-size: 16px;
   padding: 5px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #DDDDDD;
+  border-bottom-color: #F2F2F2;
+}
+
+.conversation:hover {
+  background-color: #F5F5F5;
 }
 
 .last-message-date {
@@ -54,11 +89,12 @@ a {
 .message {
   display:table;
   min-width: 1px;
-  max-width: 800px;
-  padding: 10px;
+  max-width: 750px;
+  padding: 9px;
   margin-bottom: 10px;
   border-radius: 8px;
   box-shadow: 1px 1px 2px #808080;
+  word-wrap: break-word
 }
 
 .message-from-me {

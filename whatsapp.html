@@ -2,19 +2,22 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>WhatsApp</title>
+    <title>WhatsAppDBReader</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <p>
-      <input type="file" id="file-input" />
-    </p>
-    <div id="filter-container">
-      <input type="text" id="filter-field" onkeyup="filterFieldChanged()" placeholder="Filter...">
-    </div>
-    <div id="chat-container">
-      <div id="left-pane"></div>
-      <div id="right-pane"></div>
+    <div id="content">
+      <div id="top-left-pane">
+        <input type="text" id="filter-field" onkeyup="filterFieldChanged()" placeholder="Filter...">
+      </div>
+      <div id="top-right-pane">
+        <div id="partner-name"></div>
+        <div id="file-selector">
+          <input type="file" id="file-input" />
+        </div>
+      </div>
+      <div id="bottom-left-pane"></div>
+      <div id="bottom-right-pane"></div>
     </div>
     <script src='lib/sql/sql.js' type="text/javascript"></script>
     <script src='lib/whatsapp.js' type="text/javascript"></script>
