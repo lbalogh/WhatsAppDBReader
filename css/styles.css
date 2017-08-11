@@ -9,13 +9,29 @@ a {
 	color: #000000;
 }
 
+#container {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 90vh;
+}
+
+#left-pane {
+  overflow: auto;
+}
+
+#right-pane {
+	padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
 .conversation {
 	background-color: #FFFFFF;
 	font-size: 16px;
 	padding: 5px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-    border-bottom-color: #DDDDDD;
+	border-bottom-color: #DDDDDD;
 }
 
 .last-message-date {
@@ -55,31 +71,4 @@ a {
 .from-name-in-group {
 	font-weight: bold;
 	margin-bottom: 5px;
-}
-
-#container {
-	display: flex;
-	overflow: hidden;
-	height: 92vh;
-	position: relative;
-	width: 100%;
-	backface-visibility: hidden;
-	will-change: overflow;
-}
-
-#conversations-list-pane,
-#conversation-detail-pane {
-	overflow: auto;
-	height: auto;
-	padding: .5rem;
-	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: none;
-}
-
-#conversations-list-pane {
-	width: 15rem;
-}
-
-#conversation-detail-pane {
-	flex: 1;
 }
