@@ -13,7 +13,7 @@ a {
 	width: 95%;
 	padding: 15px;
 	margin-bottom: 20px;
-  background-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 
 #filter-field {
@@ -32,8 +32,8 @@ a {
 
 #right-pane {
 	padding-left: 20px;
-  padding-right: 20px;
-  overflow: auto;
+	padding-right: 20px;
+	overflow: auto;
 }
 
 .conversation {
@@ -52,7 +52,7 @@ a {
 }
 
 .message {
-  display:table;
+	display:table;
 	min-width: 1px;
 	max-width: 800px;
 	padding: 10px;
