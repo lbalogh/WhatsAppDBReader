@@ -4,7 +4,7 @@ Simple web page that can read and display a WhatsApp database (iOS version only)
 
 [![Capture d’écran 2017-06-25 à 14.53.52.png](https://s21.postimg.org/slr859j9j/Capture_d_e_cran_2017-06-25_a_14.53.52.png)](https://postimg.org/image/gjvub4a0z/)
 
-Still needs work.
+Still needs work. Works on Chrome and Firefox.
 
 ## Steps to extract the ChatStorage.sqlite database
 
