@@ -1,29 +1,29 @@
 body {
-	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue;
-	font-size: 14px;
-	background-image: url("../images/background.jpg");
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue;
+  font-size: 14px;
+  background-image: url("../images/background.jpg");
 }
 
 a {
-	text-decoration: none;
-	color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 #filter-container {
-	width: 95%;
-	padding: 15px;
-	margin-bottom: 20px;
-	background-color: #FFFFFF;
+  width: 95%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
 }
 
 #filter-field {
-	width: 100%;
+  width: 100%;
 }
 
 #chat-container {
-	display: grid;
-	grid-template-columns: 250px 1fr;
-	grid-template-rows: 85vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 85vh;
 }
 
 #left-pane {
@@ -31,55 +31,55 @@ a {
 }
 
 #right-pane {
-	padding-left: 20px;
-	padding-right: 20px;
-	overflow: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
 }
 
 .conversation {
-	background-color: #FFFFFF;
-	font-size: 16px;
-	padding: 5px;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #DDDDDD;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDDDDD;
 }
 
 .last-message-date {
-	font-size: 12px;
-	color: #AAAAAA;
-	margin-top: 5px;
+  font-size: 12px;
+  color: #AAAAAA;
+  margin-top: 5px;
 }
 
 .message {
-	display:table;
-	min-width: 1px;
-	max-width: 800px;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	box-shadow: 1px 1px 2px #808080;
+  display:table;
+  min-width: 1px;
+  max-width: 800px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px #808080;
 }
 
 .message-from-me {
-	background-color: #DDF7C8;
-	margin-left: 100px;
+  background-color: #DDF7C8;
+  margin-left: 100px;
 }
 
 .message-from-other {
-	background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .timestamp {
-	background-color: #E0F1F9;
-	width: 80px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+  background-color: #E0F1F9;
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .from-name-in-group {
-	font-weight: bold;
-	margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
