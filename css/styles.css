@@ -122,3 +122,7 @@ a {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+.bold {
+  font-weight: bold;
+}
