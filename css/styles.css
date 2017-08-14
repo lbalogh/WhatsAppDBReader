@@ -46,10 +46,19 @@ a {
   padding-top: 14px;
 }
 
+#top-right-pane #partner-name {
+  float: left;
+  font-size: 16px;
+}
+
 #bottom-left-pane {
   background-color: #FFFFFF;
   padding-left: 10px;
   overflow: auto;
+}
+
+#bottom-left-pane .partner-name {
+  font-size: 16px;
 }
 
 #bottom-right-pane {
@@ -59,17 +68,11 @@ a {
   overflow: auto;
 }
 
-#partner-name {
-  float: left;
-  font-size: 16px;
-}
-
 #file-selector {
   float: right;
 }
 
 .conversation {
-  font-size: 16px;
   padding: 5px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
