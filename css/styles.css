@@ -19,11 +19,6 @@ a {
   grid-template-rows: 50px 93vh;
 }
 
-#filter-field {
-  width: 93%;
-  height: 25px
-}
-
 #top-left-pane {
   background-color: #FBFBFB;
   border-bottom-width: 1px;
@@ -46,11 +41,6 @@ a {
   padding-top: 14px;
 }
 
-#top-right-pane #partner-name {
-  float: left;
-  font-size: 16px;
-}
-
 #bottom-left-pane {
   background-color: #FFFFFF;
   padding-left: 10px;
@@ -68,8 +58,18 @@ a {
   overflow: auto;
 }
 
+#filter-field {
+  width: 93%;
+  height: 25px
+}
+
 #file-selector {
   float: right;
+}
+
+#conversation-title {
+  float: left;
+  font-size: 16px;
 }
 
 .conversation {
