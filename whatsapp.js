@@ -82,7 +82,7 @@ function displayConversationMessages(id) {
 
   while(stmt.step()) {
     row = stmt.getAsObject();
-    if (row['ZGROUPEVENTTYPE'] != 0 || !row['ZTEXT']) {
+    if (!row['ZTEXT']) {
       continue;
     }
 
