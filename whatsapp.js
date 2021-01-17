@@ -51,9 +51,21 @@ function displayConversationsList() {
   document.getElementById('bottom-left-pane').innerHTML = html;
 }
 
+function getGroupMembers() {
+  var stmt = db.prepare(`SELECT Z_PK, ZCONTACTNAME, ZMEMBERJID FROM ZWAGROUPMEMBER`);
+  var members = {};
+
+  while(stmt.step()) {
+    row = stmt.getAsObject();
+    members[row['Z_PK']] = row['ZCONTACTNAME'] || row['ZMEMBERJID'];
+  }
+  return members
+}
+
 // Display the selected conversation in the right pane
 function displayConversationMessages(id) {
   selectedConversationId = id;
+  var members = getGroupMembers();
 
   var sql = ` SELECT
                 ZGROUPEVENTTYPE,
@@ -61,6 +73,7 @@ function displayConversationMessages(id) {
                 ZISFROMME,
                 ZGROUPMEMBER,
                 ZMESSAGEDATE,
+                ZGROUPMEMBER,
                 ZPUSHNAME
               FROM
                 ZWAMESSAGE
@@ -95,7 +108,7 @@ function displayConversationMessages(id) {
     html += '<div class="message ' + (row['ZISFROMME'] == 1 ? 'message-from-me' : 'message-from-other') + '">';
 
     if (row['ZISFROMME'] == 0 && row['ZGROUPMEMBER']) {
-      html += '<div class="from-name-in-group">' + row['ZPUSHNAME'] + '</div>';
+      html += '<div class="from-name-in-group">' + (row['ZPUSHNAME'] || members[row['ZGROUPMEMBER']]) + '</div>';
     }
 
     html += row['ZTEXT'];
